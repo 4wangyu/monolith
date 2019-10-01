@@ -20,6 +20,7 @@ const MarkedHeader = styled.h1`
 const HeaderDate = styled.h3`
   margin-top: 10px;
   color: #606060;
+  margin-bottom: 1.45rem;
 `
 
 // STYLE THE TAGS INSIDE THE MARKDOWN HERE
