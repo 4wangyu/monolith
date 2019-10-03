@@ -64,8 +64,8 @@ export default ({ data }) => {
         <ReactDisqusComments
           shortname="moon-watcher"
           identifier={post.id}
-          title={post.frontmatter.title}
-          url={post.frontmatter.path}
+          // title={post.frontmatter.title}
+          // url={post.frontmatter.path}
         />
       </Content>
     </Layout>
