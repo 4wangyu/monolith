@@ -62,9 +62,10 @@ exports.createPages = ({ graphql, actions }) => {
   })
 }
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
-    // turn off source-maps
-    config.merge({ devtool: false })
+exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+  if (getConfig().mode === "production") {
+    actions.setWebpackConfig({
+      devtool: false,
+    })
   }
 }
